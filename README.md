@@ -29,9 +29,7 @@ We used the following technologies in the Project to make the Back-end API of su
 
 <img src="src/main/java/com/qgdaluta/inteface_check_in/docs/Interface%20de%20check-in_page-0001.jpg"/>
 
-<br>
-
-[Clique aqui para visualizar o front-end do projeto em  PDF](/src/main/java/com/qgdaluta/inteface_check_in/docs/Interface%20de%20check-in.pdf)
+[Click here to view the project front-end in PDF](/src/main/java/com/qgdaluta/inteface_check_in/docs/Interface%20de%20check-in.pdf)
 
 ## Prerequisites
 
