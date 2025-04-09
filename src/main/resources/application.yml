@@ -1,0 +1,6 @@
+spring: 
+    application: 
+        name: inteface_check_in
+server: 
+    servlet:
+        context-path: /${spring.application.name}
