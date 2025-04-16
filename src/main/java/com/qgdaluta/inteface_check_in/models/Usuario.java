@@ -1,5 +1,6 @@
 package com.qgdaluta.inteface_check_in.models;
 
-public class CustomerModels {
+
+public class Usuario {
     
 }
