@@ -1,0 +1,11 @@
+spring:
+    application.name:
+        inteface_check_in
+
+server:
+    servlet:
+        context-path: /${spring.application.name}
+    port: 8080
+    # SSL (Secure Sockets Layer) é um protocolo de segurança que estabelece uma conexão criptografada entre um cliente (como um navegador) e um servidor.
+    ssl:
+        enabled: false

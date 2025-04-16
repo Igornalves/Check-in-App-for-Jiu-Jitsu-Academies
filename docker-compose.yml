@@ -1,0 +1,13 @@
+version: "1.0"
+services:
+  app:
+    image: openjdk:17
+    container_name: inteface_check_in-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:8080"
+    volumes:
+      - "./target/inteface_check_in-0.0.1-SNAPSHOT.jar:/app/inteface_check_in.jar"
+    command: ["java", "-jar"]

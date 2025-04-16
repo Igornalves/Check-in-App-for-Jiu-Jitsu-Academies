@@ -1,0 +1,26 @@
+# # Ignorar arquivos e diretórios do sistema
+# *.class
+# *.log
+# *.jar
+# *.war
+# *.ear
+# *.iml
+# *.ipr
+# *.iws
+# .DS_Store
+# .idea/
+# .vscode/
+# *.swp
+
+# # Ignorar diretórios de build
+# target/
+# build/
+
+# # Ignorar arquivos de configuração locais
+# *.properties
+# *.yml
+# *.env
+
+# # Ignorar arquivos de controle de versão
+# .git/
+# .gitignore
