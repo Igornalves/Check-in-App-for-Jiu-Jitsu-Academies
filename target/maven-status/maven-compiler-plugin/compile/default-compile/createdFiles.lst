@@ -1,0 +1,11 @@
+com\qgdaluta\inteface_check_in\IntefaceCheckInApplication.class
+com\qgdaluta\inteface_check_in\repository\CustomerRepository.class
+com\qgdaluta\inteface_check_in\dto\Response\CustomerDTO.class
+com\qgdaluta\inteface_check_in\services\CustomerService.class
+com\qgdaluta\inteface_check_in\models\Usuario.class
+com\qgdaluta\inteface_check_in\security\CustomerSecurity.class
+com\qgdaluta\inteface_check_in\utils\CustomerUtil.class
+com\qgdaluta\inteface_check_in\config\CustomerConfig.class
+com\qgdaluta\inteface_check_in\controller\GeralController.class
+com\qgdaluta\inteface_check_in\enums\CustomerEnum.class
+com\qgdaluta\inteface_check_in\dto\Requests\CustomerDTO.class
