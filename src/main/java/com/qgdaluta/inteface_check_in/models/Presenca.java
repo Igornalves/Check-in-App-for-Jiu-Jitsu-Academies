@@ -1,26 +1,26 @@
 package com.qgdaluta.inteface_check_in.models;
 
-import java.util.List;
+import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 @Entity
 @Data
-public class Usuario {
+public class Presenca {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
-    private String email;
-    private String senha;
+    private LocalDate data;
+    private String diaSemana;
 
-    @OneToMany(mappedBy = "usuario")
-    private List<Aluno> alunos;
+    @ManyToOne
+    private Aluno aluno;
 }
+
