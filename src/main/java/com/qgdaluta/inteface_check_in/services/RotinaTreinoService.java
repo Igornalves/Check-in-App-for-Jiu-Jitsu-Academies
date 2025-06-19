@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.qgdaluta.inteface_check_in.models.RotinaTreino;
+import com.qgdaluta.inteface_check_in.repository.RotinaTreinoRepository;
 
 @Service
 public class RotinaTreinoService {
@@ -16,7 +17,7 @@ public class RotinaTreinoService {
     }
 
     public Optional<RotinaTreino> buscarPorAluno(Long alunoId) {
-        return repository.findByAlunoId(alunoId);
+        return repository.findByAluno_Id(alunoId);
     }
 
     public RotinaTreino salvar(RotinaTreino rotina) {

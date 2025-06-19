@@ -1,25 +1,22 @@
 spring:
-    application.name:
-        inteface_check_in
+  application:
+    name: inteface_check_in  # Nome da aplicação Spring Boot
 
-    datasource:
-        url: jdbc:postgresql://localhost:5432/nome_do_banco
-        username: seu_usuario
-        password: sua_senha
-        driver-class-name: org.postgresql.Driver
+  datasource:
+    url: jdbc:sqlite:database.sqlite  # Caminho do arquivo do banco de dados SQLite
+    driver-class-name: org.sqlite.JDBC  # Classe do driver JDBC para SQLite
 
-    jpa:
-        hibernate:
-            ddl-auto: update  # ou validate, create, create-drop, conforme sua necessidade
-        show-sql: true
-        properties:
-            hibernate:
-            dialect: org.hibernate.dialect.PostgreSQLDialect
+  jpa:
+    hibernate:
+      ddl-auto: update  # Atualiza automaticamente o schema do banco conforme as entidades Java
+    show-sql: true  # Mostra as queries SQL geradas pelo Hibernate no console
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect  # Dialeto oficial do Hibernate para SQLite (Hibernate 6.x)
 
 server:
-    servlet:
-        context-path: /${spring.application.name}
-    port: 8080
-    # SSL (Secure Sockets Layer) é um protocolo de segurança que estabelece uma conexão criptografada entre um cliente (como um navegador) e um servidor.
-    ssl:
-        enabled: false
+  servlet:
+    context-path: /${spring.application.name}  # Define o contexto da aplicação usando o nome definido acima
+  port: 8080  # Porta em que o servidor irá rodar
+  ssl:
+    enabled: false  # SSL desabilitado (aplicação rodando sem criptografia)

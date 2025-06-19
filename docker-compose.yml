@@ -1,7 +1,7 @@
 version: "1.0"
 services:
   app:
-    image: openjdk:17
+    image: openjdk:21
     container_name: inteface_check_in-app
     build:
       context: .
